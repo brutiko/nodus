@@ -8,10 +8,10 @@
     <meta name="description" content="Projeto de instalação que questiona a interrelação humana e ela como um meio possível através do Design. A criatividade e a qualidade de cada ser na atual dimensão coletiva">
     <link rel="stylesheet" type="text/css" href="/stylesheets/reset.css" />
     <link rel="stylesheet" type="text/css" href="/stylesheets/960grid.css" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
     <link rel="stylesheet" type="text/css" href="/stylesheets/typography.css" />
     <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
-    <link rel="stylesheet" href="/stylesheets/main.css" />
-    <link rel="stylesheet" href="/stylesheets/site.css.scss" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/site.css.scss" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
     <script src="/javascripts/Processing.js"></script>
     <title>NODUS - Instalação interativa de rede de relações referencializada na teoria do caos</title>
@@ -32,12 +32,16 @@
           <li><a href="/conceito/introducao.html">CONCEITO</a></li>
           <li><a href="/instalacao.html">INSTALAÇÃO</a></li>
           <li><a href="/apresentacao.html">APRESENTAÇÃO</a></li>
-          <li class="last-child-element"><a href="referencia.html">REFERÊNCIAS</a></li>
+          <li class="last-child-element"><a href="/referencia.html">REFERÊNCIAS</a></li>
         </ul>
       </nav>
     </header>
     <section id="content" class="container_12 clearfix">
-      <%= yield %>
+      <div class="wrapper-box">
+        <div class="wrapper-content">
+          <%= yield %>
+        </div>
+      </div>
     </section>
     <footer class="wrapper-full">
       <section id="home-contact" class="container_12 clearfix">
