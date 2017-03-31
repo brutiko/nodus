@@ -6,14 +6,14 @@
     <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
     <meta name="keywords" content="Design, Nodus, Chaos, Caos, Instalação, Interaction">
     <meta name="description" content="Projeto de instalação que questiona a interrelação humana e ela como um meio possível através do Design. A criatividade e a qualidade de cada ser na atual dimensão coletiva">
-    <link rel="stylesheet" type="text/css" href="../assets/stylesheets/reset.css" />
-    <link rel="stylesheet" type="text/css" href="../assets/stylesheets/960grid.css" />
-    <link rel="stylesheet" type="text/css" href="../assets/stylesheets/main.css" />
-    <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/typography.css" />
-    <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/style.css" />
-    <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/site.css.scss" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/960grid.css" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/typography.css" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/site.css.scss" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
-    <script src="../assets/javascripts/Processing.js"></script>
+    <script src="/javascripts/Processing.js"></script>
     <title>NODUS - Instalação interativa de rede de relações referencializada na teoria do caos</title>
 
     <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
@@ -23,7 +23,7 @@
     -->
   </head>
 
-  <body class="nodus nodus_conceito nodus_conceito_desenvolvimento">
+  <body class="conceito conceito_desenvolvimento">
     <header class="top-bar">
       <h1 class="logo"><a href="/">nodus-project</a></h1>
       <nav class="container_12">
@@ -40,14 +40,14 @@
       <div class="wrapper-box">
         <div class="wrapper-content">
           <h1>5.2. Desenvolvimento</h1>
-<img src="/assets/images/processing.png" alt="processing" title="processing" class="article-image-principal"/>
+<img src="/images/processing.png" alt="processing" title="processing" class="article-image-principal"/>
 <p>O desenvolvimento do produto demandou longas horas de esforço e dedicação, assim como muito raciocínio por parte da programação. As discussões com os amigos foram essenciais no desenvolvimento do projeto, tanto na parte de instigação e geração de idéias, quanto na parte de desenvolvimento do produto. Muitas vezes que passavam pela cabeça a idéia de desistir, ou partir para outro tema, mas com insistência e vontade foi possível a realização do projeto. A parte de programação foi sendo construída com a ajudo dos amigos, cada um contribuindo da melhor maneira possível dentre seus potenciais.
 
 <br/><br/>
 Aliar o desenvolvimento com o conceito já estipulado me pareceu a parte mais difícil do projeto. A linguagem que por vezes era o meio mais complicado para conseguir transmitir tudo aquilo que era proposto passou por longas interpretações até que se entendesse o que é preciso ser produzido. Sincronizar o movimento, a produção gráfica e o som exigiu muito estudo e dedicação até encontrar o ponto exato do projeto. Buscamos primeiramente ajustar a captação dos movimentos, com o auxilio da webcam fizemos algumas marcações com bolas para saber quais as coordenadas captadas pelo programa. 
 <br/><br/>
 
-<img src="/assets/images/nodus-desenvolvimento.png" alt="Nodus desenvolvimento" title="Nodus desenvolvimento" class="article-image-principal"/>
+<img src="/images/nodus-desenvolvimento.png" alt="Nodus desenvolvimento" title="Nodus desenvolvimento" class="article-image-principal"/>
 
 <br/><br/>
 Em seguida fizemos um teste traçando linhas de um ponto de captação ao outro, assim dependendo da coordenada que fosse marcado, seriam desenhadas as linhas de acordo com a posição inicial e final do movimento. Porém o teste não foi tão bem sucessido, o plano que traçamos acabou não funcionando. Cada vez que era gerado um ponto, depois um seguinte para posteriormente gerar uma linha; a linha parecia estar desenhada aleatoriamente, sem ter um fluxo de movimento, percebemos também que o processamento não tinha a mesma sincronia do movimento.
@@ -56,25 +56,25 @@ Em seguida fizemos um teste traçando linhas de um ponto de captação ao outro,
 O processamento era muito rápido comparado ao movimentar de uma pessoa, e as linhas se formavam mais rápido que a visão humana se sentisse normal, as linhas reagiam como vários flashs na tela, parecendo perder o controle do movimento. 
 <br/><br/>
 
-<img src="/assets/images/linhas-bolas.png" alt="Nodus desenvolvimento" title="Nodus desenvolvimento" class="article-image-principal"/>
+<img src="/images/linhas-bolas.png" alt="Nodus desenvolvimento" title="Nodus desenvolvimento" class="article-image-principal"/>
 
 <br/><br/>
 Percebemos também que a captação por parte do programa, se perdia ao saber qual era a coordenada que deveria marcar. Entao uma mesma pessoa estava gerando várias coordenadas, se comportando como vários objetos. Era preciso que uma pessoa gerasse uma única coordenada para que o fluxo de movimentação ficasse correto. Pensamos então em converter a imagem de um objeto ou uma pessoa em um bloco. Fomos atrás de algumas bibliotecas de programação e encontramos uma função que separava a imagem por contraste. Assim seria possível diferenciar um objeto do seu fundo. Testamos essa funcionalidade e dessa vez tivemos sucesso. As imagens a seguir mostram a diferença de constraste. O fundo se transforma em preto, e a imagem do objeto ou da pessoa fica em imagem, vazada.
 <br/><br/>
 
-<img src="/assets/images/nodus-vazado.png" alt="Nodus desenvolvimento" title="Nodus desenvolvimento" class="article-image-principal"/>
+<img src="/images/nodus-vazado.png" alt="Nodus desenvolvimento" title="Nodus desenvolvimento" class="article-image-principal"/>
 
 <br/><br/>
 E como transformar isso em um bloco? Boa pergunta, ainda não tinhamos conseguido o suficiente para conseguir o desejado. Uma outro função foi encontrada após pesquisas e mais pesquisas na internet. Encontramos a função Blob(), que conseguia transoformar a imagem gerada em um blob, uma massa, ou se preferir uma ameba. Fizemos com que o processing captasse a imagem, pegasse o contorno do objeto e então a funçao Blob() transformaria a imagem em um único bloco. Ainda foi preciso um esforço maior para que independente de quantas imagens fosse captada, o programa enteria que a maior parte, seria a principal parte. Dessa forma se eu levantar o braço, o programa entende q há uma única pessoa ali, e naum uma pessoa corpo, outra pessoa braço. Longas horas de busca na internet foram precisas para que isso ocorresse. Mas os fóruns e ajuda dos amigos possibilitaram achar uma saída. A partir desse ponto, pudemos começar a pensar melhor na parte gráfica que seria exibida.
 <br/><br/>
 
-<img src="/assets/images/nodus-blob.png" alt="Nodus desenvolvimento" title="Nodus desenvolvimento" class="article-image-principal"/>
+<img src="/images/nodus-blob.png" alt="Nodus desenvolvimento" title="Nodus desenvolvimento" class="article-image-principal"/>
 
 <br/><br/>
 Depois de definida a área do bloco, foi preciso calcular a centroid dessa massa. Ou seja, dada a massa captada o programa calcula o ponto central que será definido, e a partir desse ponto é gerada a animação gráfica. Trazer na animação o conceito de atrator era o principal objetivo da parte interativa. Fazer com que o ponto que a pessoa está seja representada por um campo gravitacional. Ela é o elemento principal, o elemento atrator de massa e energia. Então projetamos uma animação que transmitisse energia, gravitação e atração. Conseguimos com grande sucesso animar quadrados que giram e se mantém aproximado ao ponto central, fazendo do ponto e do objeto detectado, o atrator. Assim configuramos a quantidade de quadrados, tamanhos, velocidades e cores. Toda a composição conseguiu juntar a movimentação e o conceito de forma agradável e muito interessante. As imagens a seguir mostram a movimentaçao dos quadrados, sua atração a um ponto, e suas variações. Nessa etapa das imagens ainda não tínhamos configurado as cores e as velocidades.
 <br/><br/>
 
-<img src="/assets/images/nodus-blocks.png" alt="Nodus desenvolvimento" title="Nodus desenvolvimento" class="article-image-principal"/>
+<img src="/images/nodus-blocks.png" alt="Nodus desenvolvimento" title="Nodus desenvolvimento" class="article-image-principal"/>
 
 
 <br/><br/>
