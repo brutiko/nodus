@@ -1,0 +1,85 @@
+#menu-in {
+  margin-top: 100px;
+}
+
+#menu-in ul {
+  border-left: solid 2px #000;
+  padding-top: 100px;
+  padding-left: 10px;
+}
+
+#menu-in li {
+  display: block;
+  padding-top: 10px;
+}
+
+#menu-in a {
+  font-size: 24px;
+  color: #000;
+}
+
+nav ul {
+  float: none;
+}
+
+/*--------------home4--------------*/
+
+body { background: #000; }
+
+.nodus-quotation {
+  width: 340px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.nodus-quotation h1,
+.nodus-quotation p {
+  color: #fff;
+}
+
+.nodus-quotation h1 {
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  text-align: center;
+}
+
+.nodus-quotation p {
+  text-align: left;
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 20px;
+}
+
+.nodus-quotation span {
+  text-align: right;
+  font-style: none;
+  padding: 0;
+  margin-top: 5px;
+  display: inline;
+}
+
+a.play-processing {
+  margin: auto;
+  margin-top: 250px;
+  text-indent: -10000px;
+  height: 80px;
+  width: 80px;
+  border-radius: 100px;
+  border: solid 3px #fff;
+  display: block;
+  text-decoration: none;
+}
+
+.play-processing span {
+  background: #fff;
+  display: block;
+  height: 48px;
+  width: 48px;
+  border-radius: 50px;
+  text-indent: -10000px;
+  margin: auto;
+}
