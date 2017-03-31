@@ -496,6 +496,7 @@ footer.wrapper-full {
 /* 4x3 Aspect Ratio */
 .intrinsic-container-4x3 {
   padding-bottom: 75%;
+  margin-bottom: 20px;
 }
  
 .intrinsic-container iframe {
@@ -506,3 +507,6 @@ footer.wrapper-full {
   height: 100%;
 }
 
+.canvas-size {
+  max-width: 100%;
+}
