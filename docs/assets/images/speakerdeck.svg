@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+	 style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#666666;}
+	.st1{fill:#FFFFFF;}
+</style>
+<circle class="st0" cx="257" cy="257" r="256"/>
+<g id="Page-1" sketch:type="MSPage">
+	<path id="sliderdeck" sketch:type="MSShapeGroup" class="st1" d="M157,151c-21,0-38,17-38,38v134c0,21,17,38,38,38h199
+		c21,0,38-17,38-38V189c0-21-17-38-38-38H157z"/>
+</g>
+<path class="st0" d="M213.3,219.9c-11.6,0-21,9.4-21,21V273c0,11.6,9.4,21,21,21h86.3c11.6,0,21-9.4,21-21v-32.1
+	c0-11.6-9.4-21-21-21H213.3z"/>
+<polygon class="st1" points="210.5,256 247.5,237.6 247.5,274.3 "/>
+<title>sliderdeck</title>
+<description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+<polygon class="st1" points="264.3,274.5 264.3,237.4 300.9,256 "/>
+</svg>

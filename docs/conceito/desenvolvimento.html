@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta name="keywords" content="Design, Nodus, Chaos, Caos, Instalação, Interaction">
+    <meta name="description" content="Projeto de instalação que questiona a interrelação humana e ela como um meio possível através do Design. A criatividade e a qualidade de cada ser na atual dimensão coletiva">
+    <link rel="stylesheet" type="text/css" href="../assets/stylesheets/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/stylesheets/960grid.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/stylesheets/main.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/typography.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/style.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/site.css.scss" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+    <script src="../assets/javascripts/Processing.js"></script>
+    <title>NODUS - Instalação interativa de rede de relações referencializada na teoria do caos</title>
+
+    <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+    <!--  
+    <link href="/stylesheets/site.css" rel="stylesheet" />
+    <script src="/javascripts/all.js"></script>
+    -->
+  </head>
+
+  <body class="nodus nodus_conceito nodus_conceito_desenvolvimento">
+    <header class="top-bar">
+      <h1 class="logo"><a href="/">nodus-project</a></h1>
+      <nav class="container_12">
+        <ul class="grid_6 push_3">
+          <li class="first-child-element"><a href="/">PROJETO</a></li>
+          <li><a href="/conceito/introducao.html">CONCEITO</a></li>
+          <li><a href="/instalacao.html">INSTALAÇÃO</a></li>
+          <li><a href="/apresentacao.html">APRESENTAÇÃO</a></li>
+          <li class="last-child-element"><a href="/referencia.html">REFERÊNCIAS</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="content" class="container_12 clearfix">
+      <div class="wrapper-box">
+        <div class="wrapper-content">
+          <h1>5.2. Desenvolvimento</h1>
+<img src="/assets/images/processing.png" alt="processing" title="processing" class="article-image-principal"/>
+<p>O desenvolvimento do produto demandou longas horas de esforço e dedicação, assim como muito raciocínio por parte da programação. As discussões com os amigos foram essenciais no desenvolvimento do projeto, tanto na parte de instigação e geração de idéias, quanto na parte de desenvolvimento do produto. Muitas vezes que passavam pela cabeça a idéia de desistir, ou partir para outro tema, mas com insistência e vontade foi possível a realização do projeto. A parte de programação foi sendo construída com a ajudo dos amigos, cada um contribuindo da melhor maneira possível dentre seus potenciais.
+
+<br/><br/>
+Aliar o desenvolvimento com o conceito já estipulado me pareceu a parte mais difícil do projeto. A linguagem que por vezes era o meio mais complicado para conseguir transmitir tudo aquilo que era proposto passou por longas interpretações até que se entendesse o que é preciso ser produzido. Sincronizar o movimento, a produção gráfica e o som exigiu muito estudo e dedicação até encontrar o ponto exato do projeto. Buscamos primeiramente ajustar a captação dos movimentos, com o auxilio da webcam fizemos algumas marcações com bolas para saber quais as coordenadas captadas pelo programa. 
+<br/><br/>
+
+<img src="/assets/images/nodus-desenvolvimento.png" alt="Nodus desenvolvimento" title="Nodus desenvolvimento" class="article-image-principal"/>
+
+<br/><br/>
+Em seguida fizemos um teste traçando linhas de um ponto de captação ao outro, assim dependendo da coordenada que fosse marcado, seriam desenhadas as linhas de acordo com a posição inicial e final do movimento. Porém o teste não foi tão bem sucessido, o plano que traçamos acabou não funcionando. Cada vez que era gerado um ponto, depois um seguinte para posteriormente gerar uma linha; a linha parecia estar desenhada aleatoriamente, sem ter um fluxo de movimento, percebemos também que o processamento não tinha a mesma sincronia do movimento.
+
+<br/><br/>
+O processamento era muito rápido comparado ao movimentar de uma pessoa, e as linhas se formavam mais rápido que a visão humana se sentisse normal, as linhas reagiam como vários flashs na tela, parecendo perder o controle do movimento. 
+<br/><br/>
+
+<img src="/assets/images/linhas-bolas.png" alt="Nodus desenvolvimento" title="Nodus desenvolvimento" class="article-image-principal"/>
+
+<br/><br/>
+Percebemos também que a captação por parte do programa, se perdia ao saber qual era a coordenada que deveria marcar. Entao uma mesma pessoa estava gerando várias coordenadas, se comportando como vários objetos. Era preciso que uma pessoa gerasse uma única coordenada para que o fluxo de movimentação ficasse correto. Pensamos então em converter a imagem de um objeto ou uma pessoa em um bloco. Fomos atrás de algumas bibliotecas de programação e encontramos uma função que separava a imagem por contraste. Assim seria possível diferenciar um objeto do seu fundo. Testamos essa funcionalidade e dessa vez tivemos sucesso. As imagens a seguir mostram a diferença de constraste. O fundo se transforma em preto, e a imagem do objeto ou da pessoa fica em imagem, vazada.
+<br/><br/>
+
+<img src="/assets/images/nodus-vazado.png" alt="Nodus desenvolvimento" title="Nodus desenvolvimento" class="article-image-principal"/>
+
+<br/><br/>
+E como transformar isso em um bloco? Boa pergunta, ainda não tinhamos conseguido o suficiente para conseguir o desejado. Uma outro função foi encontrada após pesquisas e mais pesquisas na internet. Encontramos a função Blob(), que conseguia transoformar a imagem gerada em um blob, uma massa, ou se preferir uma ameba. Fizemos com que o processing captasse a imagem, pegasse o contorno do objeto e então a funçao Blob() transformaria a imagem em um único bloco. Ainda foi preciso um esforço maior para que independente de quantas imagens fosse captada, o programa enteria que a maior parte, seria a principal parte. Dessa forma se eu levantar o braço, o programa entende q há uma única pessoa ali, e naum uma pessoa corpo, outra pessoa braço. Longas horas de busca na internet foram precisas para que isso ocorresse. Mas os fóruns e ajuda dos amigos possibilitaram achar uma saída. A partir desse ponto, pudemos começar a pensar melhor na parte gráfica que seria exibida.
+<br/><br/>
+
+<img src="/assets/images/nodus-blob.png" alt="Nodus desenvolvimento" title="Nodus desenvolvimento" class="article-image-principal"/>
+
+<br/><br/>
+Depois de definida a área do bloco, foi preciso calcular a centroid dessa massa. Ou seja, dada a massa captada o programa calcula o ponto central que será definido, e a partir desse ponto é gerada a animação gráfica. Trazer na animação o conceito de atrator era o principal objetivo da parte interativa. Fazer com que o ponto que a pessoa está seja representada por um campo gravitacional. Ela é o elemento principal, o elemento atrator de massa e energia. Então projetamos uma animação que transmitisse energia, gravitação e atração. Conseguimos com grande sucesso animar quadrados que giram e se mantém aproximado ao ponto central, fazendo do ponto e do objeto detectado, o atrator. Assim configuramos a quantidade de quadrados, tamanhos, velocidades e cores. Toda a composição conseguiu juntar a movimentação e o conceito de forma agradável e muito interessante. As imagens a seguir mostram a movimentaçao dos quadrados, sua atração a um ponto, e suas variações. Nessa etapa das imagens ainda não tínhamos configurado as cores e as velocidades.
+<br/><br/>
+
+<img src="/assets/images/nodus-blocks.png" alt="Nodus desenvolvimento" title="Nodus desenvolvimento" class="article-image-principal"/>
+
+
+<br/><br/>
+Realizada mais uma etapa, testamos a captação, a movimentação, o fluxo e a direção dos quadrados. Esse teste foi de muita felicidade, toda a parte de captação dos movimentos estava alinhada e a parte gráfica conseguia sincronizar com essa captação. Foram basicamente 3 meses de testes e mais testes até que fosse possível esse resultado. A última etapa foi conseguir com que o fundo do aplicativo fosse influenciado conforme o movimento da pessoa.
+<br/><br/>
+
+<img src="/assets/images/nodus-follow.png" alt="Nodus desenvolvimento" title="Nodus desenvolvimento" class="article-image-principal"/>
+<br/><br/>
+
+</p>
+<aside class="button-place">
+  <a href="/conceito/concepcao.html" class="button preview"><< Concepção</a>
+  <a href="/conceito/producao-grafica.html" class="button next">Produção gráfica >></a>
+</aside>
+        </div>
+      </div>
+    </section>
+    <footer class="wrapper-full">
+      <section id="home-contact" class="container_12 clearfix">
+        <div class="be-contact grid_3 tab">
+          <h1 class="section-title">CONTATO</h1>
+          <span class="divider"></span>
+          <h2 class="section-description">Dúvidas, ideias, indagações:</h2>
+          <p class="tab1"><a href="mail:brunakochi@gmail.com">brunakochi@gmail.com</a></p>
+          <ul>
+            <li><small class="tab-title">Nodus</small></li>
+            <li class="tab1"><a href="/">Projeto</a></li>
+            <li class="tab1"><a href="/conceito/introducao.html">Conceito</a></li>
+            <li class="tab1"><a href="/instalacao.html">Instalação</a></li>
+            <li class="tab1"><a href="/apresentacao.html">Apresentação</a></li>
+            <li class="tab1"><a href="/referencia.html">Referências</a></li>
+          </ul>
+        </div>
+        <aside class="grid_6 tab">
+          <ul class="grid_6">
+            <li><small>O buraco negro</small></li>
+            <li class="tab1"><a href="/conceito/introducao.html"> Introdução</a></li>
+            <li class="tab1"><a href="/conceito/o-design.html">O design</a></li>
+            <li class="tab1"><a href="/conceito/comunicacao.html">Comunicação</a></li>
+            <li class="tab1"><a href="/conceito/estetica.html">Estética</a></li>
+            <li class="tab1"><a href="/conceito/criatividade.html">Criatividade</a></li>
+            <li><small class="tab-title">Traçando a rede</small></li>
+            <li class="tab1"><a href="/conceito/sociedade.html">A sociedade</a></li>
+            <li class="tab1"><a href="/conceito/emergencia.html">Emergência</a></li>
+            <li class="tab1"><a href="/conceito/caosmose.html">Caosmose</a></li>
+          </ul>
+          <ul class="grid_6">
+            <li><small>A ordem e o caos</small></li>
+            <li class="tab1"><a href="/conceito/nao-dualismo.html">O não-dualismo</a></li>
+            <li class="tab1"><a href="/conceito/teoria-caos.html">Teoria do caos</a></li>
+            <li class="tab1"><a href="/conceito/caos-criatividade.html">O caos e a criação</a></li>
+            <li><small class="tab-title">A representação</small></li>
+            <li class="tab1"><a href="/conceito/concepcao.html">Concepção</a></li>
+            <li class="tab1"><a href="/conceito/desenvolvimento.html">Desenvolvimento</a></li>
+            <li class="tab1"><a href="/conceito/interacao.html">Interação</a></li>
+            <li class="tab1"><a href="/conceito/sonora.html">Sonora</a></li>
+            <li class="tab1"><a href="/conceito/conclusao.html">Conclusão</a></li>
+          </ul>
+        </aside>
+        <div class="social-media-list grid_3">
+          <h2>SEGUIR</h2>
+          <ul>
+            <li><a href="https://www.linkedin.com/in/bruna-tiemi-kochi-2b2a2b5" target="_blank" class="linkedin-icon">Linkedin</a></li>
+            <li><a href="https://twitter.com/brutiko" target="_blank" class="twitter-icon">Twitter</a></li>
+            <li><a href="https://medium.com/@brutiko" target="_blank" class="medium-icon">Medium</a></li>
+            <li><a href="https://github.com/brutiko" target="_blank" class="github-icon">Github</a></li>
+            <li><a href="https://speakerdeck.com/brutiko" target="_blank" class="speakerdeck-icon">Speakerdeck</a></li>
+          </ul>
+        </div>
+        <div class="clear"></div>
+      </section>
+      <span class="register">Made with ❤ and beer<br/>All rights reserved © Bruna Kochi</span>
+    </footer>
+  </body>
+</html>

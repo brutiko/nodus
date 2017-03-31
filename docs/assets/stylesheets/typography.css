@@ -1,0 +1,141 @@
+body {
+  font-size: 16px;
+}
+
+a {
+  color: #107FC9;
+  font-family: 'Minion Pro', Georgia, sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  color: #333;
+  font-family: 'Roboto', Helvetica, Arial;
+  font-size: 40px;
+}
+
+
+h3 {
+/*  color: #C70189;*/
+  color: #480b5b;
+  font-family: 'Terminal Dosis', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  font-style: normal;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+h4 {
+  color: #333;
+  font-family: 'Terminal Dosis', Arial, sans-serif;
+  font-weight: 200;
+  font-size: 25px;
+  font-style: normal;
+}
+
+p {
+  color: #333;
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 26px;
+  word-wrap: break-word;
+}
+
+p a {
+  color: #1C709B;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-size: 20px;
+  font-style: italic;
+}
+
+p a:hover {
+  color: #604f94;
+  text-decoration: underline;
+}
+
+p span {
+  display: block;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 0 25px;
+}
+
+p span.quotation {
+  color: #999;
+  font-family: 'Minion Pro', Georgia, sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 200;
+  line-height: 30px;
+}
+
+nav li a {
+  color: #fff;
+  font-family: 'Open Sans Condensed', Helvetica, Arial;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+article p {
+  color: #333;
+  font-family: 'Minion Pro', Georgia, sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: justify;
+}
+
+article span {
+  color: #333;
+  font-family: 'Minion Pro', Georgia, sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: justify;
+}
+
+blockquote {
+  color: #333;
+  font-size: 18px;
+  font-family: 'Minion Pro', Georgia, sans-serif;
+  line-height: 28px;
+  font-style: italic;
+  text-align: justify;
+}
+
+blockquote span {
+  color: #666;
+  font-size: 12px;
+  font-style: normal;
+  text-indent: 10px;
+}
+
+li span {
+  color: #666;
+  font-size: 13px;
+  line-height: 17px;
+}
+
+.article-indice a,
+.text aside a {
+  color: #107FC9;
+  font-style: italic;
+}
+
+.article-indice small {
+  color: #333;
+  font-size: 16px;
+}
+
+.home-content span {
+  color: #666;
+  font-size: 16px;
+}
