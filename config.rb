@@ -15,7 +15,9 @@ page '/*.txt', layout: false
 
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
-
+page "/conceito/*", :layout => "article"
+page "/referencia.html", :layout => "article"
+page "/apresentacao.html", :layout => "layout"
 # Proxy pages
 # https://middlemanapp.com/advanced/dynamic-pages/
 
