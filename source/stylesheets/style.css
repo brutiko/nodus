@@ -1,6 +1,6 @@
 .logo {
   text-indent: -10000px;
-  background: url(../images/nodus-logo.png) no-repeat;
+  background: url(/nodus/images/nodus-logo.png) no-repeat;
   margin: 60px auto 0;
   width: 100px;
   height: 47px;
@@ -67,23 +67,23 @@ nav li {
 }
 
 #project.block {
-  background: url(/images/projeto.png) no-repeat;
+  background: url(/nodus/images/projeto.png) no-repeat;
 }
 
 #process.block {
-  background: url(/images/processo.png) no-repeat;
+  background: url(/nodus/images/processo.png) no-repeat;
 }
 
 #presentation.block {
-  background: url(/images/apresentacao.png) no-repeat;
+  background: url(/nodus/images/apresentacao.png) no-repeat;
 }
 
 #theory.block {
-  background: url(/images/teoria.png) no-repeat;
+  background: url(/nodus/images/teoria.png) no-repeat;
 }
 
 #reference.block {
-  background: url(/images/referencia.png) no-repeat;
+  background: url(/nodus/images/referencia.png) no-repeat;
 }
 
 #content {
@@ -369,31 +369,31 @@ footer.wrapper-full {
 }
 
 .social-media-list a.linkedin-icon { 
-  background-image: url(../images/linkedin-icon.png);
+  background-image: url(/nodus/images/linkedin-icon.png);
   background-repeat: no-repeat;
   background-size: contain; 
 }
 
 .social-media-list a.twitter-icon {
-  background-image: url(../images/twitter-icon.png);
+  background-image: url(/nodus/images/twitter-icon.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .social-media-list a.medium-icon { 
-  background: url(../images/medium-icon.png);
+  background: url(/nodus/images/medium-icon.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .social-media-list a.github-icon { 
-  background-image: url(../images/github.png);
+  background-image: url(/nodus/images/github.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .social-media-list a.speakerdeck-icon {
-  background-image: url(../images/speakerdeck.svg);
+  background-image: url(/nodus/images/speakerdeck.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
