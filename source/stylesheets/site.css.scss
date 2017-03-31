@@ -2,7 +2,6 @@
 @import "normalize";
 
 body {
-  background: #ECC561;
   text-align: center;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em;
@@ -15,7 +14,7 @@ body {
 
 .logo {
   text-indent: -10000px;
-  background: url(/images/nodus-logo.png) no-repeat;
+  background: url(/nodus/images/nodus-logo.png) no-repeat;
   margin: auto;
   width: 100px;
   height: 47px;
